@@ -1,0 +1,11 @@
+rm -rf CMakeFiles
+rm -rf cmake_install.cmake
+rm -rf CMakeCache.txt
+rm -rf rush
+rm -rf *.out
+
+if [ $# -eq 1 ]; then
+    if [ $1 = "-x" ]; then
+        rm -rf *.xml
+    fi
+fi

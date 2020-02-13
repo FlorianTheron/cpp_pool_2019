@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ $# -eq 1 ]; then
+    if [ $1 = "-c" ]; then
+        g++ *.cpp -W -Werror -Wextra -std=c++14 -Wall
+    else
+        echo -e "Usage: ./compil [arg]\n\t-c:\tUse g++ compilator"
+    fi
+else
+    ./clean
+    cmake CMakeLists.txt
+    make
+fi

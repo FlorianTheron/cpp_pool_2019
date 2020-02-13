@@ -1,0 +1,6 @@
+rm -rf CMakeFiles
+rm -rf cmake_install.cmake
+rm -rf CMakeCache.txt
+rm -rf santa
+rm -rf *.xml
+rm -rf *.out
